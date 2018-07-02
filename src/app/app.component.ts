@@ -93,11 +93,11 @@ export class AppComponent implements OnInit {
             }
 
             this.cromossomos.forEach(value => {
-                console.log('geracao: ', this.geracao);
+/*                 console.log('geracao: ', this.geracao);
                 console.log('distancia: ', value.distancia);
                 console.log('string de busca: ', value.string);
                 console.log('string almejada: ', this.fraseObjetivo);
-                console.log('----------------------------------------------------------------------');
+                console.log('----------------------------------------------------------------------'); */
                 if (!this.achou) {
                     if (value.distancia === 0) {
                         this.achou = true;
