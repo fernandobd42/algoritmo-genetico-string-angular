@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<navbar></navbar>
+<div style="text-align:center">
+  <h1>
+    Algoritmo Genético
+  </h1>
+
+
+  <h2>Começar</h2>
+
+  <div>
+    <label>Frase: </label><br>
+    <input style="width: 60%" [(ngModel)]="fraseObjetivo" />
+    <br><br>
+    <label>Taxa Mutação: </label><br>
+    <input style="width: 60%" [(ngModel)]="taxaMutacao" />
+    <br><br>
+    <label>População: </label><br>
+    <input style="width: 60%" [(ngModel)]="populacao" />
+  </div>
+
+  <button (click)="iniciar()">Mutar</button>
+  <h2 *ngIf="!!resultado">A frase <span style="color: blue">{{ resultado }}</span> foi encontrada na {{ geracao }}º geração</h2>
+</div>
+
+
+
